@@ -14,34 +14,44 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <header class="header"><a href="./index.html"><svg viewBox="0 0 66 52" width="66" height="52">
-        <use xlink:href="./image/icons.svg#icon-foodsta"></use>
-    </svg></a>
-        <nav class="header__nav">
-            <ul class="header__item">
-                <li class="header__list"><a href="" class="header__link">Home</a></li>
-                <li class="header__list"><a href="" class="header__link">About</a></li>
-                <li class="header__list"><a href="" class="header__link">Service</a></li>
-                <li class="header__list"><a href="" class="header__link">Menu</a></li>
-                <li class="header__list"><a href="" class="header__link">Contact</a></li>
-            </ul>
-            <button type="button" class="header__btn">Order Now</button>
-        </nav>
+    <header class="header">
+        <div class="header__wrap">
+            <nav class="header__nav">
+                <a href="./index.html">
+                    <svg viewBox="0 0 66 52" width="66" height="52">
+                <use xlink:href="./image/icons.svg#icon-foodsta"></use>
+            </svg>
+            </a>
+            <div class="mobile-menu" id="mobile-menu">
+                <ul class="header__item">
+                    <li class="header__list"><a href="" class="header__link">Home</a></li>
+                    <li class="header__list"><a href="" class="header__link">About</a></li>
+                    <li class="header__list"><a href="" class="header__link">Service</a></li>
+                    <li class="header__list"><a href="" class="header__link">Menu</a></li>
+                    <li class="header__list"><a href="" class="header__link">Contact</a></li>
+                </ul>
+                <button type="button" class="header__btn" data-modal-open>Order Now</button>
+            </div>
+            </nav>
+        </div>
     </header>
-    <main>
+    <main class="main">
         <section class="hero-title">
-            <div>
-                <div class="container">
+            <div class="container">
+                <div class="wrap__title">
                     <h1 class="title">Enjoy Your Favorite Food From Anywhere</h1>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-                    <button type="button" class="header__btn">Order Now</button>
+                    <button type="button" class="header__btn" data-modal-open>Order Now</button>
                 </div>
                 <div class="foto1">
                     <img src="./image/foto1.jpg" alt="salat" class="salat">
                 </div>
-                <img src="./image/rectangle.jpg" alt="rectangle" class="rectangle">
+                
             </div>
-            
+        </section>
+        <img src="./image/rectangle.jpg" alt="rectangle" class="rectangle" style="max-width: 1280px;">
+        <section>
+
         </section>
     </main>
     <footer>
