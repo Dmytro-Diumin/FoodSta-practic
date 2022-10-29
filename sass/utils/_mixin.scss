@@ -1,0 +1,42 @@
+@mixin center-flex($jc:center, $ai:center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin font($fw, $fs, $lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+@mixin size($w, $h) {
+   width: $w;
+   height: $h;
+}
+
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin table {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin retina {
+    @media (min-devise-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
+    }
+}
