@@ -5,11 +5,12 @@ body {
 }
 
 h1,h2,h3,h4,h5,p {
-    margin: 0 auto;
+    margin: 0;
 }
 
 ul {
     list-style: none;
+    margin: 0;
 }
 
 a {
@@ -56,7 +57,7 @@ a {
 }
 
 .header__link {
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 14px;
     line-height: 16px;
     color: #2C2C2C;
@@ -75,7 +76,7 @@ a {
 .header__btn {
     font-weight: 500;
     font-size: 13px;
-    line-height: 150%;
+    line-height: 1.5;
     text-align: right;
     color: #2C2C2C;
     background: #BBF330;
@@ -85,7 +86,10 @@ a {
     border: none;
 }
 
+
+
 .hero-title .container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     
@@ -97,8 +101,9 @@ a {
 }
 
 .foto1 {
-    margin-top: 14px;
-    margin-left: auto;
+    position: absolute;
+    top: 14px;
+    right: 30px;
 }
 
 
@@ -118,7 +123,7 @@ a {
 }
 
 .text {
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 16px;
     line-height: 150%;
     color: #2C2C2C;
@@ -127,9 +132,118 @@ a {
 
 
 .salat {
-    background: #FEFEFE;
+    /* background: #FEFEFE; */
     border: 26px solid #FFE550;
     /* display:flex;
     justify-content: center; */
     border-radius: 50%;
 }
+
+
+
+
+.offerings {
+    max-width: 1280px;
+    background-image: url(../image/rectangle.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    /* background-color: #f5f5f5; */
+}
+
+.offerings .container {
+    display: flex;
+    padding-top: 99px;
+    padding-bottom: 43px;
+}
+
+
+.offerings__img {
+    margin-top: 70px;
+}
+
+.offerings__apple--mobile {
+    display: none;
+}
+
+.offerings__apple--tablet {
+    display: none;
+}
+.offerings__apple--desktop {
+}
+
+
+.offerings__wrap {
+    width: 573px;
+    height: 392px;
+    margin-top: 139px;
+    margin-left: 90px;
+}
+
+.offerings__title {
+    width: 526px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #2C2C2C;
+    margin-bottom: 20px;
+}
+
+.offerings__text {
+    width: 500px;
+    height: 72px;
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2C2C2C;
+    margin-bottom: 40px;
+}
+
+.offerings__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+
+
+
+.offerings__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fff;
+    
+}
+
+.offerings__pretitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #2C2C2C;
+    margin-top: 8px;
+    margin-bottom: 16px;
+
+}
+
+.offerings__pretext {
+    width: 253px;
+    height: 63px;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2C2C2C;
+}
+
+.offerings__btn {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: right;
+    color: #2C2C2C;
+    padding: 10px 22px;
+    background: #FFFFFF;
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+    margin-top: 32px;
+}
+
