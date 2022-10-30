@@ -33,7 +33,7 @@ ul {
 
 .offerings {
   width: 100%;
-  background-image: url(/image/bcg/rectangle-mob.jpg);
+  background-image: url(../image/bcg/rectangle-mob.jpg);
   background-size: cover;
   margin: 0 auto;
   font-family: "Roboto";
@@ -42,12 +42,12 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .offerings {
-    background-image: url(/image/bcg/rectangle-tabl.jpg);
+    background-image: url(../image/bcg/rectangle-tabl.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .offerings {
-    background-image: url(/image/bcg/rectangle-desk.jpg);
+    background-image: url(../image/bcg/rectangle-desk.jpg);
     padding-bottom: 0;
   }
 }
@@ -294,12 +294,4 @@ ul {
 }
 .offerings__vector {
   position: absolute;
-}
-
-.tabl-2 {
-  margin-top: 40px;
-}
-
-.tabl-3 {
-  margin-top: 106px;
 }/*# sourceMappingURL=main.css.map */
