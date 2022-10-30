@@ -61,12 +61,11 @@
     }
 
     &__apple--tabl{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        // padding-top: 100px;
 
         @include table {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             padding-top: 187px;
         }
 
