@@ -1,0 +1,219 @@
+.offerings {
+    max-width: 1280px;
+    background-image: url(/image/bcg/rectangle-mob.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-weight: 400;
+
+    @include table {
+        background-image: url(/image/bcg/rectangle-tabl.jpg);
+    }
+
+    @include desktop {
+        background-image: url(/image/bcg/rectangle-desk.jpg);
+    }
+
+
+
+    & .container {
+        // display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+
+
+        @include desktop {
+            display: flex;
+            padding-top: 99px;
+            padding-bottom: 43px;
+        }
+    }
+
+    &__img {
+        margin-top: 50px;
+
+
+        @include desktop {
+            margin-top: 70px;
+        }
+        
+    }
+
+    &__apple--mobile {
+        // display: none;
+        display: block;
+        width: 100%;
+
+        @include table {
+            display: none;
+        }
+    }
+
+    &__apple--tabl{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 100px;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__apple--tablet {
+        display: none;
+
+        @include table {
+            display: block;
+            
+        }
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__apple--desktop {
+        display: none;
+
+        @include desktop {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__wrap {
+
+        @include table {
+            margin: ;
+        }
+        
+        @include desktop {
+            max-width: 573px;
+            margin-top: 139px;
+            margin-left: 90px;
+        }
+    }
+
+    &__title {
+        max-width: 280px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        color: #2C2C2C;
+        margin-bottom: 28px;
+
+        @include table {
+            max-width: 526px;
+            font-size: 42px;
+            line-height: 1.16;
+            margin-bottom: 20px;
+        }
+
+        @include desktop {
+            line-height: 1.2;  
+        }
+    }
+
+    &__text {
+        max-width: 272px;
+        font-size: 14px;
+        line-height: 1.14;
+        color: #2C2C2C;
+
+        @include table {
+            max-width: 500px;
+            font-size: 16px;
+            line-height: 1.18;
+            margin-bottom: 40px;
+        }
+
+        @include desktop {
+            line-height: 1.5;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+
+        @include table {
+            display: flex;
+        }
+
+        @include desktop {
+            
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+        }
+    }
+
+    &__icon {
+        max-width: 48px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-top: 28px; 
+        
+        @include table {
+            margin-top: 0;
+        }
+    }
+
+    &__pretitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.4;
+        color: #2C2C2C;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    &__pretext {
+        max-width: 253px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #2C2C2C;
+
+        @include table {
+            margin-right: 116px;
+
+        }
+
+        @include desktop {
+            margin-right: 0;
+        }
+    }
+
+    &__btn {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: right;
+        color: #2C2C2C;
+        padding: 10px 22px;
+        background: #FFFFFF;
+        border: 2px solid #7EB101;
+        border-radius: 30px;
+        margin-top: 28px;
+
+        @include table {
+            margin-top: 40px;
+        }
+
+        @include desktop {
+            margin-top: 32px;
+        }
+    }
+}
+
+.tabl-2 {
+    margin-top: 40px;
+}
+
+.tabl-3 {
+    margin-top: 100px;
+}

@@ -1,162 +1,162 @@
-.header {
-    background-color: var(--secondary-white-color);
-    text-decoration: none;
-    border-bottom: 1px solid #ececec;
+// .header {
+//     background-color: var(--secondary-white-color);
+//     text-decoration: none;
+//     border-bottom: 1px solid #ececec;
     
 
-    &-container {
-      display: flex;
-      align-items: center;
-      position: relative;
-    }
+//     &-container {
+//       display: flex;
+//       align-items: center;
+//       position: relative;
+//     }
     
-    &-content {
-      display: inline-block;
-      @include font(700, 24px, 1.16);
-      font-family: 'Raleway';
-      color: #000000;
-      text-decoration: none;
-      padding-top: 16px;
-      padding-bottom: 16px;
+//     &-content {
+//       display: inline-block;
+//       @include font(700, 24px, 1.16);
+//       font-family: 'Raleway';
+//       color: #000000;
+//       text-decoration: none;
+//       padding-top: 16px;
+//       padding-bottom: 16px;
       
 
-      @include table {
-        margin-right: 87px;
-        padding-top: 26px;
-        padding-bottom: 26px;
-      }
+//       @include table {
+//         margin-right: 87px;
+//         padding-top: 26px;
+//         padding-bottom: 26px;
+//       }
 
-      @include desktop {
-        @include font(700, 26px, 1.19);
-        margin-right: 93px;
-        padding-top: 24px;
-        padding-bottom: 25px;
-      }
-    }
+//       @include desktop {
+//         @include font(700, 26px, 1.19);
+//         margin-right: 93px;
+//         padding-top: 24px;
+//         padding-bottom: 25px;
+//       }
+//     }
 
-    &-list {
-      display: none;
+//     &-list {
+//       display: none;
 
-      @include table {
-        @include center-flex;
-      }
+//       @include table {
+//         @include center-flex;
+//       }
 
-      @include desktop {
-        @include center-flex;
-      }
-    }
+//       @include desktop {
+//         @include center-flex;
+//       }
+//     }
 
-    &-link {
-      position: relative;
-      @include font(500, 14px, 1.14);
-      padding-top: 20px;
-      padding-bottom: 20px;
-      transition: color 250ms var(--bezier);
-      text-decoration: none;
-    }
+//     &-link {
+//       position: relative;
+//       @include font(500, 14px, 1.14);
+//       padding-top: 20px;
+//       padding-bottom: 20px;
+//       transition: color 250ms var(--bezier);
+//       text-decoration: none;
+//     }
 
-    &-contact {
+//     &-contact {
       
-      display: none;
+//       display: none;
 
-      @include table {
-        // @include center-flex;
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        margin-left: auto;
-        padding-top: 21px;
-        padding-bottom: 21px;
+//       @include table {
+//         // @include center-flex;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: baseline;
+//         margin-left: auto;
+//         padding-top: 21px;
+//         padding-bottom: 21px;
 
-      }
+//       }
 
-      @include desktop {
-        @include center-flex;
-        flex-direction: row;
-        align-items: center;
-        margin-left: auto;
-        gap: 30px;
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-    }
+//       @include desktop {
+//         @include center-flex;
+//         flex-direction: row;
+//         align-items: center;
+//         margin-left: auto;
+//         gap: 30px;
+//         padding-top: 0;
+//         padding-bottom: 0;
+//       }
+//     }
 
-    &-icons {
-      margin-right: 10px;
-      transition: fill 250ms var(--bezier);
+//     &-icons {
+//       margin-right: 10px;
+//       transition: fill 250ms var(--bezier);
 
-      @include table {
-        width: 14px;
-      }
+//       @include table {
+//         width: 14px;
+//       }
 
-      @include desktop {
-        width: 16px;
-      }
-    }
+//       @include desktop {
+//         width: 16px;
+//       }
+//     }
 
-    &-item:not(:first-child) {
-      margin-left: 50px;
-    }
+//     &-item:not(:first-child) {
+//       margin-left: 50px;
+//     }
 
-    &-items:not(:last-child) {
+//     &-items:not(:last-child) {
       
-      @include table {
-        margin-bottom: 10px;
-      }
+//       @include table {
+//         margin-bottom: 10px;
+//       }
 
-      @include desktop {
-        margin-bottom: 0;
-      }
-    }
+//       @include desktop {
+//         margin-bottom: 0;
+//       }
+//     }
 
     
-  }
+//   }
   
-  .current::after {
-    display: none;
+//   .current::after {
+//     display: none;
 
-    @include table {
-    content: "";
-    @include size(100%, 4px);
-    display: block;
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    background: var(--accent-color);
-    border-radius: 2px;
-  }
-  }
+//     @include table {
+//     content: "";
+//     @include size(100%, 4px);
+//     display: block;
+//     position: absolute;
+//     bottom: -12px;
+//     left: 0;
+//     background: var(--accent-color);
+//     border-radius: 2px;
+//   }
+//   }
 
-  .web-content {
-    color: var(--accent-color);
-  }
+//   .web-content {
+//     color: var(--accent-color);
+//   }
 
-  .contacts {
-    @include center-flex;
-    letter-spacing: 0.02em;
-    color: var(--secondary-gray-color);
-    fill: var(--secondary-gray-color);
-    text-decoration: none;
-    transition: color 250ms var(--bezier);
-    &:hover,&:focus {
-    fill: var(--accent-color);}
+//   .contacts {
+//     @include center-flex;
+//     letter-spacing: 0.02em;
+//     color: var(--secondary-gray-color);
+//     fill: var(--secondary-gray-color);
+//     text-decoration: none;
+//     transition: color 250ms var(--bezier);
+//     &:hover,&:focus {
+//     fill: var(--accent-color);}
 
-    @include table {
-      @include font(500, 12px, 1.16);
-      margin-left: auto;
-    }
+//     @include table {
+//       @include font(500, 12px, 1.16);
+//       margin-left: auto;
+//     }
 
-    @include desktop {
-      @include font(500, 14px, 1.14);
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-  }
+//     @include desktop {
+//       @include font(500, 14px, 1.14);
+//       padding-top: 20px;
+//       padding-bottom: 20px;
+//     }
+//   }
   
-  .contact {
-    // @include center-flex;
-    @include font(400, 14px, 1.71);
-    color: var(--secondary-gray-color);
-    text-decoration: none;
-    transition: color 250ms var(--bezier);
-  }
+//   .contact {
+//     // @include center-flex;
+//     @include font(400, 14px, 1.71);
+//     color: var(--secondary-gray-color);
+//     text-decoration: none;
+//     transition: color 250ms var(--bezier);
+//   }

@@ -1,7 +1,7 @@
 .container {
   // width: 1230px;
-  width: 100%;
-  max-width: 480px;
+  // width: 100%;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -12,28 +12,28 @@
   }
 
   @media screen and (min-width: 1200px) {
-  max-width: 1200px;
+  max-width: 1280px;
  }
 
 }
 
-.list {
-  list-style: none;
-}
+// .list {
+//   list-style: none;
+// }
 
-.link {
-  color: var(--secondary-text-color);
-  text-decoration: none;
+// .link {
+//   color: var(--secondary-text-color);
+//   text-decoration: none;
 
-  &:hover,
-  &:focus {
-  color: var(--accent-color);
-  }
+//   &:hover,
+//   &:focus {
+//   color: var(--accent-color);
+//   }
 
-  &.current {
-    color: var(--accent-color);
-  }
-}
+//   &.current {
+//     color: var(--accent-color);
+//   }
+// }
 
 
 

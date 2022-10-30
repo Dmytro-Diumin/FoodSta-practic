@@ -1,152 +1,152 @@
-.footer {
+// .footer {
   
-    background-color: #2f303a;
-    padding-top: 60px;
-    padding-bottom: 60px;
+//     background-color: #2f303a;
+//     padding-top: 60px;
+//     padding-bottom: 60px;
 
-      @media screen and (min-width: 1200px) {
-      max-width: 1600px;
-      display: flex;
-      align-items: baseline;
-    }
+//       @media screen and (min-width: 1200px) {
+//       max-width: 1600px;
+//       display: flex;
+//       align-items: baseline;
+//     }
 
-    &-container {
-      text-align: center;
+//     &-container {
+//       text-align: center;
 
-      @include table {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-      }
+//       @include table {
+//         display: flex;
+//         flex-wrap: wrap;
+//         align-items: baseline;
+//       }
 
-      @include desktop {
-        text-align: left;
-      }
-    }
+//       @include desktop {
+//         text-align: left;
+//       }
+//     }
 
-    &-contact {
-      margin-bottom: 60px;
+//     &-contact {
+//       margin-bottom: 60px;
 
-      @include table {
-        margin-left: 76px;
-      }
+//       @include table {
+//         margin-left: 76px;
+//       }
 
-      @include desktop {
-        margin-bottom: 0;
-        margin-left: 0;
-      }
-    }
+//       @include desktop {
+//         margin-bottom: 0;
+//         margin-left: 0;
+//       }
+//     }
 
-    &-content {
-      // @include center-flex;
-      @include font(700, 26px, 1.1);
-      font-family: 'Raleway';
-      color: var(--secondary-white-color);
-      text-decoration: none;
-    }
+//     &-content {
+//       // @include center-flex;
+//       @include font(700, 26px, 1.1);
+//       font-family: 'Raleway';
+//       color: var(--secondary-white-color);
+//       text-decoration: none;
+//     }
 
-    &-items:not(:first-child) {
-      margin-top: 9px;
-    }
+//     &-items:not(:first-child) {
+//       margin-top: 9px;
+//     }
 
-    &-icons {
-      // margin-left: 70px;
-      margin-bottom: 60px;
+//     &-icons {
+//       // margin-left: 70px;
+//       margin-bottom: 60px;
 
-      @include table {
-        margin-left: 165px;
-        margin-right: auto;
-      }
+//       @include table {
+//         margin-left: 165px;
+//         margin-right: auto;
+//       }
 
-      @include desktop {
-        margin-left: 70px;
-    }
-    }
+//       @include desktop {
+//         margin-left: 70px;
+//     }
+//     }
 
-    &-sign-up {
-      // margin-left: 93px;
+//     &-sign-up {
+//       // margin-left: 93px;
 
-      @include table {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
+//       @include table {
+//         margin-left: auto;
+//         margin-right: auto;
+//       }
+//     }
 
-    &-sign-up input {
-      @include size(100%, 50px);
-      max-width: 480px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      align-items: center;
-      color:var(--secondary-white-color);
-      background-color: #2F303A;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
-      padding-left: 16px;
-      cursor: pointer;
-      outline: none;
+//     &-sign-up input {
+//       @include size(100%, 50px);
+//       max-width: 480px;
+//       margin-top: 20px;
+//       margin-bottom: 20px;
+//       align-items: center;
+//       color:var(--secondary-white-color);
+//       background-color: #2F303A;
+//       border: 1px solid rgba(255, 255, 255, 0.3);
+//       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//       border-radius: 4px;
+//       padding-left: 16px;
+//       cursor: pointer;
+//       outline: none;
 
-      @media screen and (min-width: 1200px) {
-        @include size(358px, 50px);
-      }
-    }
+//       @media screen and (min-width: 1200px) {
+//         @include size(358px, 50px);
+//       }
+//     }
 
-    &-sign-up input:focus {
-      @include font(400, 16px, 1.25);
-      background-color:#2F303A;
-      color:var(--secondary-white-color);
-      border: 1px solid var(--accent-color);
-    }
+//     &-sign-up input:focus {
+//       @include font(400, 16px, 1.25);
+//       background-color:#2F303A;
+//       color:var(--secondary-white-color);
+//       border: 1px solid var(--accent-color);
+//     }
 
-    &-sign-up input::placeholder {
-      @include font(400, 16px, 1.25);
-      @include center-flex;
-      color: rgba(255, 255, 255, 0.6);
-    }
+//     &-sign-up input::placeholder {
+//       @include font(400, 16px, 1.25);
+//       @include center-flex;
+//       color: rgba(255, 255, 255, 0.6);
+//     }
 
-    &-text {
-      @include font(500, 14px, 1.1);
-      text-transform: uppercase;
-      color: var(--secondary-white-color);
-    }
+//     &-text {
+//       @include font(500, 14px, 1.1);
+//       text-transform: uppercase;
+//       color: var(--secondary-white-color);
+//     }
 
-    &-list {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
+//     &-list {
+//       display: flex;
+//       justify-content: center;
+//       gap: 10px;
+//     }
 
-    &-social-icons {
-      @include center-flex;
-      @include size(44px, 44px);
-      margin-top: 20px;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.1);
-      fill: var(--secondary-white-color);
-      transition: background-color 250ms var(--bezier);
-    }
+//     &-social-icons {
+//       @include center-flex;
+//       @include size(44px, 44px);
+//       margin-top: 20px;
+//       border-radius: 50%;
+//       background-color: rgba(255, 255, 255, 0.1);
+//       fill: var(--secondary-white-color);
+//       transition: background-color 250ms var(--bezier);
+//     }
 
-    &-social-icons:hover,
-    &-social-icons:focus {
-      @include center-flex;
-      @include size(44px, 44px);
-      border-radius: 50%;
-      background-color: var(--accent-color);
-      fill: var(--secondary-white-color);
-    }
-  }
+//     &-social-icons:hover,
+//     &-social-icons:focus {
+//       @include center-flex;
+//       @include size(44px, 44px);
+//       border-radius: 50%;
+//       background-color: var(--accent-color);
+//       fill: var(--secondary-white-color);
+//     }
+//   }
 
-  .social-icons {
-    width: 20px;
-  }
+//   .social-icons {
+//     width: 20px;
+//   }
   
-  .address {
-    // @include center-flex;
-    @include font(400, 14px, 1.7);
-    font-style: normal;
-    text-decoration: none;
-    color: var(--secondary-white-color);
-    margin-top: 20px;
-    transition: color 250ms var(--bezier);
-  }
+//   .address {
+//     // @include center-flex;
+//     @include font(400, 14px, 1.7);
+//     font-style: normal;
+//     text-decoration: none;
+//     color: var(--secondary-white-color);
+//     margin-top: 20px;
+//     transition: color 250ms var(--bezier);
+//   }
