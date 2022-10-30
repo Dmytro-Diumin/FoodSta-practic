@@ -33,7 +33,7 @@
         
         @include desktop {
             display: flex;
-            padding-top: 99px;
+            padding-top: 70px;
             padding-bottom: 43px;
             padding-left: 16px;
             padding-right: 16px;
@@ -63,10 +63,8 @@
     &__apple--tabl{
 
         @include table {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding-top: 187px;
+            display: block;
+            padding-top: 115px;
         }
 
         @include desktop {
@@ -78,8 +76,7 @@
         display: none;
 
         @include table {
-            display: block;
-            
+            display: block; 
         }
 
         @include desktop {
@@ -96,16 +93,14 @@
     }
 
     &__wrap {
-        width: 100%;
 
         @include table {
-            margin-right: 116px;
             max-width: 620px;
         }
         
         @include desktop {
             max-width: 573px;
-            margin-top: 139px;
+            margin-top: 99px;
             margin-left: 90px;
             margin-right: 0;
         }
@@ -173,12 +168,15 @@
         }
 
         @include desktop {
-            margin-right: 0;
+         
         }
     }
 
+    &__item:not(:last-child) {
+        margin-right: 67px;
+    }
+
     &__icon {
-        max-width: 48px;
         border-radius: 50%;
         background-color: #fff;
         margin-top: 28px; 
@@ -234,9 +232,14 @@
         }
     }
 
+    &__btn:hover,
+    &__btn:focus {
+        border: 2px solid #597D00;
+        border-radius: 30px;
+    }
+
     &__button {
         position: relative;
-        width: 83px;
         font-size: 13px;
         line-height: 1.5;
         color: #000000;  
