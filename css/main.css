@@ -1,3 +1,18 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 320px;
   margin-left: auto;
@@ -17,12 +32,13 @@
 }
 
 .offerings {
-  max-width: 1280px;
+  width: 100%;
   background-image: url(/image/bcg/rectangle-mob.jpg);
   background-size: cover;
   margin: 0 auto;
   font-family: "Roboto";
   font-weight: 400;
+  padding-bottom: 100px;
 }
 @media screen and (min-width: 768px) {
   .offerings {
@@ -32,13 +48,20 @@
 @media screen and (min-width: 1200px) {
   .offerings {
     background-image: url(/image/bcg/rectangle-desk.jpg);
+    padding-bottom: 0;
   }
 }
 .offerings .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .offerings .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .offerings .container {
@@ -47,6 +70,8 @@
     display: flex;
     padding-top: 99px;
     padding-bottom: 43px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 .offerings__img {
@@ -75,7 +100,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
+}
+@media screen and (min-width: 768px) {
+  .offerings__apple--tabl {
+    padding-top: 187px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .offerings__apple--tabl {
@@ -101,7 +130,15 @@
 @media screen and (min-width: 1200px) {
   .offerings__apple--desktop {
     display: block;
-    width: 100%;
+  }
+}
+.offerings__wrap {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .offerings__wrap {
+    margin-right: 116px;
+    max-width: 620px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -109,6 +146,7 @@
     max-width: 573px;
     margin-top: 139px;
     margin-left: 90px;
+    margin-right: 0;
   }
 }
 .offerings__title {
@@ -117,6 +155,7 @@
   font-size: 28px;
   line-height: 1.17;
   color: #2C2C2C;
+  margin-top: 60px;
   margin-bottom: 28px;
 }
 @media screen and (min-width: 768px) {
@@ -160,15 +199,20 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
   .offerings__list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     list-style: none;
     padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offerings__item {
+    margin-right: 0;
   }
 }
 .offerings__icon {
@@ -191,10 +235,21 @@
   margin-bottom: 16px;
 }
 .offerings__pretext {
-  max-width: 253px;
+  max-width: 252px;
   font-size: 14px;
   line-height: 1.5;
   color: #2C2C2C;
+}
+@media screen and (min-width: 768px) {
+  .offerings__pretext {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offerings__pretext {
+    margin-right: 0;
+    max-width: 253px;
+  }
 }
 .offerings__btn {
   font-weight: 500;
@@ -218,11 +273,33 @@
     margin-top: 32px;
   }
 }
+.offerings__button {
+  position: relative;
+  width: 83px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #000000;
+  padding: 7px 17px 7px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background: #FFE550;
+  margin-left: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .offerings__button {
+    display: none;
+  }
+}
+.offerings__vector {
+  position: absolute;
+}
 
 .tabl-2 {
   margin-top: 40px;
 }
 
 .tabl-3 {
-  margin-top: 100px;
+  margin-top: 106px;
 }/*# sourceMappingURL=main.css.map */
