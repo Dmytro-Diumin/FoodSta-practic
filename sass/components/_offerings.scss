@@ -1,6 +1,6 @@
 .offerings {
     width: 100%;
-    background-image: url(/image/bcg/rectangle-mob.jpg);
+    background-image: url(../image/bcg/rectangle-mob.jpg);
     background-size: cover;
     margin: 0 auto;
     font-family: 'Roboto';
@@ -8,11 +8,11 @@
     padding-bottom: 100px;
 
     @include table {
-        background-image: url(/image/bcg/rectangle-tabl.jpg);
+        background-image: url(../image/bcg/rectangle-tabl.jpg);
     }
 
     @include desktop {
-        background-image: url(/image/bcg/rectangle-desk.jpg);
+        background-image: url(../image/bcg/rectangle-desk.jpg);
         padding-bottom: 0;
     }
 
